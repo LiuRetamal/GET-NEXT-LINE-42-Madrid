@@ -124,28 +124,28 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-// int main(void)
-// {
-// 	int fd = open("test.txt", O_RDONLY);
-// 	int fd2 = open("test2.txt", O_RDONLY);
+int main(void)
+{
+	int fd = open("test.txt", O_RDONLY);
+	int fd2 = open("test2.txt", O_RDONLY);
 
-// 	char *ptr; 
-// 	ptr = get_next_line(fd);
-// 	printf("Line1 FD1:");
-// 	printf("%s", ptr);
-// 	free(ptr);
-// 	ptr = get_next_line(fd2);
-// 	printf("Line1 FD2:");
-// 	printf("%s", ptr);
-// 	free(ptr);
-// 	ptr = get_next_line(fd);
-// 	printf("Line2 FD1:");
-// 	printf("%s", ptr);
-// 	free(ptr);
-// 	ptr = get_next_line(fd2);
-// 	printf("Line2 FD2:");
-// 	printf("%s", ptr);
-// 	free(ptr);
-// 	close(fd);
-// 	return(0);
-// }
+	char *ptr; 
+	ptr = get_next_line(fd);
+	printf("Line1 FD1:");
+	printf("%s", ptr);
+	free(ptr);
+	ptr = get_next_line(fd2);
+	printf("Line1 FD2:");
+	printf("%s", ptr);
+	free(ptr);
+	ptr = get_next_line(fd);
+	printf("Line2 FD1:");
+	printf("%s", ptr);
+	free(ptr);
+	ptr = get_next_line(fd2);
+	printf("Line2 FD2:");
+	printf("%s", ptr);
+	free(ptr);
+	close(fd);
+	return(0);
+}
